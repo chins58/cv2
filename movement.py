@@ -9,7 +9,7 @@ def count_fingers(contour, drawing):
         if defects is None:
             return 0
 
-        count = 0
+        count = 0 
 
         for i in range(defects.shape[0]):
             s, e, f, d = defects[i, 0]
@@ -43,10 +43,10 @@ while True:
     # Convert the frame to grayscale
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
-    # Apply Gaussian blur to the frame
+    # Apply Gaussian blur to the frame  
     blur = cv2.GaussianBlur(gray, (35, 35), 0)
 
-    # Apply threshold to get a binary image
+    # Apply threshold to get a binary image -- 
     _, thresh = cv2.threshold(blur, 127, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
 
     # Find contours in the thresholded image
