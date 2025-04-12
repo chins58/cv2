@@ -1,2 +1,2 @@
 # cv2
-Detect Hand Movement
+Detected Hand Movement
